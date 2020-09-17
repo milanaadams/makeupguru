@@ -1,0 +1,1801 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #777777;
+}
+ul {
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+p {
+    line-height: 26px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    z-index: 5;
+}
+button:focus {
+    outline: none;
+}
+
+
+/* , General */
+.section {
+    padding: 120px 0;
+}
+.section__white {
+    background-color: #fff;
+    width: 100%;
+}
+.section__grey {
+    background-color: #F9F9F9;
+    width: 100%;
+}
+
+.section__darkgrey {
+    background-color: #292F34;
+    width: 100%;
+}
+
+.section__red {
+    background-color: #BA2A51;
+    width: 100%;
+}
+
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.divider {
+    display: block;
+    background-image: url(/img/divider.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 3px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+    background-color: #BA2A51;
+    font-size: 16px;
+    border: 2px #BA2A51 solid;
+    border-radius: 5px;
+    padding: 11px 25px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+.btn:hover {
+    border: 2px #BA2A51 solid;
+    background-color: transparent;
+    color: #BA2A51;
+}
+.btn:active {
+    border: 2px #BA2A51 solid;
+    background-color: transparent;
+    color: #BA2A51;
+}
+.btn__transparent {
+    border-color: #fff;
+    background-color: transparent;
+}
+.btn__transparent:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #BA2A51;
+}
+
+.link-transition {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+.link-transition:hover {
+    opacity: 0.5;
+}
+
+.side-img {
+    display: block;
+    background-repeat: no-repeat;
+    flex-basis: 45%;
+}
+.side-text {
+    flex-basis: 45%;
+}
+.section__header {
+    margin-bottom: 60px;
+}
+
+/* , Upper Header */
+.header-upper {
+    background-color: #292F34;
+    width: 100%;
+    padding: 13px 0;
+}
+.nav-upper{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+
+.header-upper__contacts {
+ display: -webkit-box;
+ display: flex;
+ -webkit-box-align: center;
+         align-items: center;
+}
+
+
+.header-upper__contacts>li {
+    font-size: 12px;
+    color: #ffffff;
+    margin-right: 40px;
+    list-style: none;
+}
+.header-upper__contacts>li:last-child {
+    margin-right: 0;
+}
+.header-upper__contacts>li a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+.header-upper__contacts>li a:hover {
+    opacity: 0.3;
+}
+.header-upper__contacts>li i {
+    margin-right: 7px;
+}
+
+.header-upper__social {
+    display: -webkit-box;
+    display: flex;
+}
+.header-upper__social>li {
+    list-style: none;
+    color: #ffffff;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.header-upper__social>li:last-child {
+    margin-right: 0;
+}
+
+.header-upper__social>li a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+.header-upper__social>li a:hover {
+    opacity: 0.3;
+}
+/* , Lower Header */
+.header-lower {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-lower {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 20px 0;
+    z-index: 10;
+}
+.logo {
+    max-width: 200px;
+    min-width: 100px;
+    margin-right: 30px;
+}
+.header-lower__logo img {
+    width: 100%;
+    height: auto;
+}
+.nav-bar {
+    display: -webkit-box;
+    display: flex;
+}
+.nav-bar>li {
+    position: relative;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-bar>li:last-child {
+    margin-right: 0;
+}
+.nav-bar>li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    opacity: 1;
+    
+}
+.nav-bar>li a:hover{
+    opacity: 0.5;
+}
+.nav-bar>li ul {
+    display: none;
+    padding: 30px 0 10px;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+.nav-bar>li:hover ul {
+    display: block;
+}
+
+.nav-bar>li ul li {
+    border-bottom: 1px solid #f2f2f2;
+    width: 350px;
+} 
+.nav-bar>li ul li:last-child {
+    border-bottom: 0;
+} 
+.nav-bar>li ul li a {
+    display: block;
+    padding: 10px 15px;
+}
+.nav-bar>li ul li a:hover {
+    background-color: #f2f2f2;
+}
+.burger-menu {
+    position: relative;
+    display: none;
+    border: 0;
+    background-color: transparent;
+    z-index: 20;
+
+}
+.burger-menu:focus {
+    outline: none;
+}
+.burger-menu-icon {
+    position: relative;
+    width: 40px;
+    height: 3px;
+    background-color: #BA2A51;
+}
+.burger-menu-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #BA2A51;  
+    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;  
+    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+.burger-menu-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #BA2A51;  
+    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;  
+    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;  
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+.burger-menu-icon.burger-active {
+    background-color: transparent;
+}
+.burger-menu-icon.burger-active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.burger-menu-icon.burger-active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.long-menu__active {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-color: rgba(87, 14, 14, 0.979);
+    z-index: 2;
+}
+
+/* , Page Cover */
+
+.page-cover {
+    display: block;
+    background-image: url(/img/main-photo.jpg);
+    background-color: #000000;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.page-cover__flex {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+}
+.page-cover__info {
+    width: 541px;
+    margin-top: 155px;
+    text-align: center;
+}
+.page-cover__descr {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 33px;
+}
+
+.page-cover__button img {
+    display: block;
+    width: 344px;
+    margin: 0 auto;
+    margin-top: 40px;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear
+}
+
+.page-cover__button img:hover {
+    opacity: 0.8;
+}
+.page-cover-mobile {
+    display: none;
+}
+
+/* , Sections */
+
+.section__white {
+    background-color: #fff;
+    width: 100%;
+    padding: 120px 0;
+}
+.section__grey {
+    background-color: #F9F9F9;
+    width: 100%;
+    padding: 120px 0;
+}
+
+.section__darkgrey {
+    background-color: #292F34;
+    width: 100%;
+    padding: 120px 0;
+}
+
+.message-block {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+.message-block__descr {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000;
+}
+/* , Message Block */
+.main-fields {
+    background-color: #F9F9F9;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.main-fields__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.main-fields__text {
+    margin-left: 30px;
+}
+.main-fields__text p {
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+.main-fields__list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 50px;
+}
+.main-fields__list li {
+    margin-bottom: 6px;
+}
+.main-fields__list li::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background-image: url(/img/icons/angle-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7.5px;
+    height: 10.5px;
+    margin-right: 6px;
+}
+
+/* , Advantages Block */
+
+.section__header .advantages__header {
+    margin-bottom: 0;
+}
+
+.advantages__table {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+.advantages__item {
+    width: 28%;
+    position: relative;
+    margin-top: 60px;
+}
+.advantages__item p {
+    padding-left: 70px;
+    line-height: 20px;
+}
+.advantages__icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.makeup-products__desc {
+    font-size: 16px;
+}
+.brands {
+    margin: 0 auto;
+}
+.brands-slider .slick-track {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+}
+.brands-slider .slick-slide {
+    height: 50px;
+    width: auto;
+    margin: 10px 10px;
+    text-align: center;
+}
+.brands-slider .slick-slide:focus{
+    outline: none;
+}
+.brands__item {
+    height: 50px;
+    width: auto;
+    margin: 10px 10px;
+}
+.brands-slider .slick-list {
+    overflow: hidden;
+}
+
+
+.mission {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+}
+.mission__descr {
+    margin-right: 30px;
+    color: #fff;
+}
+.mission-btn {
+    margin-top: 45px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+.mission__img img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+/* , Our Teachers Block */
+
+
+.our-teachers {
+    background: url(/img/photos/makeupillustration2.jpg);
+    background-repeat: no-repeat;
+    background-size: 880px 900px;
+    background-position: right bottom;
+    background-color: #fff;
+    min-height: 855px;
+}
+.our-teachers__gallery {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+.our-teachers__item {
+    position: relative;
+    margin: 0 5px;
+}
+.our-teachers__img {
+    display: block;
+    max-width: 430px;
+}
+.our-teachers__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.our-teachers__descr {
+    position: absolute;
+    width: 320px;
+    height: 130px;
+    background-color: #fff;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -65px;
+    padding: 20px 0;
+}
+.our-teachers__social {
+    display: -webkit-box;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+.our-teachers__social a{
+    font-size: 20px;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+.our-teachers__social a:hover{
+    opacity: 0.5;
+}
+.our-teachers__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #BA2A51;
+    font-weight: 700;
+    text-align: center;
+}
+.our-teachers__position {
+    font-size: 14px;
+    text-align: center;
+}
+
+.portfolio__content {
+    position: relative;
+    padding: 0 80px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.portfolio__item {
+    display: block;
+    max-width: 430px;
+    margin: 0 5px;
+}
+.portfolio__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.slider-portfolio .slick-track {
+    display: -webkit-box;
+    display: flex;
+}
+.slider-portfolio .slick-list {
+    overflow: hidden;
+}
+.slider-portfolio .slick-slide:focus{
+    outline: none;
+}
+.portfolio-slider-item {
+    display: block;
+    max-width: 430px;
+    margin: 0 5px;
+}
+.portfolio-slider-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.slider-portfolio .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    opacity: 0.1;
+    
+}
+.slider-portfolio .slick-arrow:focus {
+    outline: none;
+}
+.slider-portfolio .slick-arrow.slick-prev {
+    left: 5px;
+    background: url('/img/icons/back.svg') 0 0 no-repeat;
+}
+.slider-portfolio .slick-arrow.slick-next {
+    right: 5px;
+    background: url('/img/icons/forward.svg') 0 0 no-repeat;
+}
+.makeup-room__text {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000;
+}
+
+.makeup-room__gallery {
+    margin-top: 70px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+.makeup-room__item {
+    display: block;
+    max-width: 445px;
+    height: 270px;
+    margin: 0 5px;
+}
+.makeup-room__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.feedback {
+    background: url(/img/photos/lipstickswithsplash.png) no-repeat left bottom,
+                url(/img/photos/lipstickswithsplash-right.png) no-repeat right bottom;
+    background-size: 485px 735px;
+    background-color: #fff;
+    min-height: 680px;
+}
+
+.feedback-slide {
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feedback-slide__text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.feedback-btn {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-top: 100px;
+    text-align: center;
+}
+.feedback-slider {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.feedback-slider .slick-dots {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+}
+.feedback-slider .slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+}
+.feedback-slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #BABABA;
+    border: 1px transparent solid;
+    border-radius: 50%;
+    padding: 0;
+}
+.feedback-slider .slick-dots button:focus {
+    outline: none;
+}
+.feedback-slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px #BABABA solid;
+}
+.feedback-slider-btn {
+
+    margin-top: 100px;
+    text-align: center;
+}
+.feedback-btn:hover {
+    color: #BA2A51;
+}
+.feedback-slider .slick-track {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+            align-items: flex-start;
+}
+.feedback-slider .slick-slide {
+
+    margin: 10px 10px;
+    text-align: center;
+}
+.feedback-slider .slick-slide:focus{
+    outline: none;
+}
+
+.feedback-slider .slick-list {
+    overflow: hidden;
+}
+.feedback-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.private-lessions {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.private-lessions__text {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+.private-lessions__btn {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-top: 70px;
+}
+
+.contact {
+    background-image: url(/img/photos/makeupbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 780px;
+}
+
+.contact-inner {
+    max-width: 850px;
+    margin-left: 50%;
+    margin-right: 10%;
+}
+
+.contact__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 70px;
+}
+
+.contact-form__bottom {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-top: 65px;
+    max-width: 550px;
+    
+}
+.contact-form__fields {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.contact-form__fields input {
+    font-size: 16px;
+    padding: 0 10px;
+}
+.contact-form__name {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.contact-form__sm {
+    flex-basis: 49%;
+}
+.contact-form__btn {
+    margin-top: 50px;
+    position: relative;
+    max-width: 170px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+.contact-form-popup__btn {
+    display: none;
+    margin-top: 50px;
+    position: relative;
+    max-width: 170px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+.contact-form__bottom label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 3px;
+}
+.contact-form__bottom input {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;  
+    height: 45px; 
+}
+.required {
+    color: red;
+    font-size: 12px;
+}
+.footer {
+    padding: 60px 0;
+}
+.footer-inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+.footer-left {
+    flex-basis: 30%;
+}
+.footer-info__hours {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.footer-info__hours span {
+    display: block;
+}
+.footer-center {
+    flex-basis: 30%;
+    text-align: center;
+}
+.footer-center span {
+    display: block;
+}
+.footer-center a {
+    display: block;
+    text-decoration: none;
+    opacity: 1;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+.footer-center a:hover {
+    opacity: 0.5;
+}
+.footer-right {
+    flex-basis: 30%;
+}
+.footer-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* , Modal windows */
+.contact-form-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 60%;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.contact-form-modal-active {
+    display: block;
+}
+.contact-form-modal-wrap {
+    position: relative;
+    margin-top: 40px auto;
+}
+
+.contact-form-modal-close::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: #BA2A51;  
+    -webkit-transform: rotate(45deg);  
+            transform: rotate(45deg);
+
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.contact-form-modal-close::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: #BA2A51;  
+    -webkit-transform: rotate(-45deg);  
+            transform: rotate(-45deg);
+}
+
+.burger-menu-icon.burger-active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.contact-form-modal-inner {
+    margin-top: 40px;
+}
+
+/* , Media Query  */
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 44px;
+    }
+    .wrap {
+        max-width: 1300px;
+    }
+    .page-cover {
+        background-position: -100px 0;
+    }
+    .page-cover__info {
+        margin-top: 120px;
+    }
+    .main-fields__text {
+        margin-left: 60px;
+    }
+    .brands__item {
+        height: 40px;
+    }
+    .our-teachers {
+        background-size: 760px 820px;
+        min-height: 825px;
+    }
+
+    .our-teachers__descr {
+        width: 300px;
+        bottom: -60px;
+    }
+ 
+    .feedback {
+        background-size: 390px 591px;
+    }
+    .contact__text {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 38px;
+    }
+    .wrap {
+        max-width: 1140px;
+    }
+    .page-cover {
+        background-position: -180px 0;
+        height: 600px;
+    }
+    .page-cover__info {
+        width: 450px;
+        margin-top: 100px;
+    }
+
+    .page-cover__button img {
+        width: 330px;
+    }
+    .message-block__descr {
+        font-size: 34px;
+    }
+    .main-fields__text p {
+        margin-bottom: 30px;
+    }
+    .mission-btn {
+        margin-top: 30px;
+    }
+    .advantages__item p {
+        font-size: 16px;
+    }
+
+    .our-teachers {
+        background-size: 650px 701px;
+        min-height: 705px;
+    }
+
+    .our-teachers__descr {
+        width: 230px;
+        height: 120px;
+        bottom: -55px;
+    }
+
+    .makeup-room__text {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .feedback {
+        background-size: 350px 530px;
+        min-height: 540px;
+    }
+    .private-lessions__text {
+        font-size: 34px;
+        line-height: 43px;
+    }
+    .contact {
+        min-height: 300px;
+    }
+    .contact__text {
+        font-size: 26px;
+    }
+   
+}
+@media (max-width: 1300px) {
+    .section {
+        padding: 100px 0;
+    }
+    .wrap {
+        max-width: 960px;
+    }
+    .page-cover {
+        height: 500px;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .side-img {
+        flex-basis: 40%;
+        max-width: 300px;
+        max-height: 450px;
+    }
+    .side-text {
+        flex-basis: 55%;
+    }
+    .page-cover__info {
+        width: 550px;
+        margin-top: 80px;
+    }
+
+    .advantages__item {
+        width: 45%;
+    }
+    .our-teachers {
+        background-size: 550px 593px;
+        min-height: 660px;
+    }
+    .makeup-room__gallery {
+        flex-wrap: wrap;
+    }
+    .makeup-room__item {
+        flex-basis: 48%;
+        margin: 15px 0;
+    }
+    .makeup-room__text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .contact__text {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .feedback {
+        background-size: 280px 424px;
+        min-height: 430px;
+    }
+    .feedback-slider-btn {
+        margin-top: 80px;
+    }
+    .private-lessions__text {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .makeup-products__desc {
+        font-size: 16px;
+    }
+    .brands__item {
+        height: 30px;
+    }
+    .feedback {
+        background-size: 220px 333px;
+        min-height: 100px;
+    }
+    .contact__text {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .feedback-slide__text {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .section {
+        padding: 80px 0;
+    }
+    .btn {
+        text-transform: uppercase;
+    }
+    .header-upper__contacts>li {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    .header-upper__social i {
+        font-size: 20px;
+    }
+    .page-cover {
+        height: 450px;
+    }
+    .page-cover__info {
+        width: 500px;
+        margin-top: 60px;
+    }
+    .page-cover__descr {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .message-block__descr {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .main-fields__list {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    .makeup-products__desc {
+        font-size: 20px;
+    }
+    .makeup-room__text {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .feedback {
+        background: url(/img/photos/lipstickssplash-turn.png) no-repeat left top,
+                    url(/img/photos/lipstickssplash-turn-r.png) no-repeat right top;
+        background-size: 200px 265px;
+        background-color: #fff;
+        min-height: 265px;
+    }
+}
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .wrap {
+        max-width: 95%;
+    }
+    .section {
+        padding: 80px 0;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .header-upper_email {
+        display: none;
+    }
+    .nav-lower {
+        padding: 10px 0;
+    }
+    .nav-bar>li {
+        margin-right: 0;
+    }
+
+    .long-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.95;
+        -webkit-transition: right 0.7s ease-in;
+        transition: right 0.7s ease-in;
+    }
+    .long-menu.burger-active {
+        right: 0;
+    }
+    .nav-bar {
+        display: block;
+        margin-top: 150px;
+    }
+    .nav-bar>li {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .nav-bar>li ul {
+        position: relative;
+        text-align: right;
+    }
+    .nav-bar>li ul li {
+        
+        width: 100%;
+        
+    } 
+    .nav-bar>li ul li a {
+        padding-right: 30px;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .page-cover {
+        height: 400px;
+    }
+    .page-cover__info {
+        width: 400px;
+        margin-top: 80px;
+        margin-right: 20px;
+    }
+    .page-cover__descr {
+        display: none;
+    }
+
+    .message-block__descr {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .main-fields {
+        flex-wrap: wrap;
+    }
+    .main-fields__text {
+        margin-left: 0;
+    }
+    .side-text {
+        flex-basis: 100%;
+        -webkit-box-ordinal-group: 2;
+                order: 1;
+    }
+    .side-img {
+        flex-basis: 80%;
+        margin: 0 auto;
+        -webkit-box-ordinal-group: 3;
+                order: 2;
+        margin-top: 50px;
+        max-width: 632px;
+    }
+    .advantages__table {
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+    .advantages__item {
+        width: 70%;
+    }
+    .mission {
+        flex-wrap: wrap;
+    }
+    .mission__descr {
+        margin-right: 0;
+    }
+    .main-fields__list {
+        padding-left: 80px;
+    }
+    .our-teachers__gallery {
+        -webkit-box-pack: center;
+                justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .our-teachers__item {
+        flex-basis: 100%;
+        margin-bottom: 130px;
+    }
+    .our-teachers__item:last-child {
+        margin-bottom: 80px;
+    }
+    .our-teachers__img {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .our-teachers__descr {
+        position: absolute;
+        width: 320px;
+        height: 130px;
+        background-color: #eee;
+        padding: 20px 0;
+        bottom: -55px;
+        margin: 0 auto;   
+    }
+
+    .feedback-slider {
+        margin-top: 80px;
+    }
+    
+    .feedback-slide {
+        max-width: 550px;
+    }
+    .feedback-slide__text {
+        font-size: 16px;
+    }
+    .feedback-btn {
+        margin-top: 50px;
+    }
+    .private-lessions__text {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .private-lessions__btn {
+        margin-top: 50px;
+    }
+ 
+    .contact-inner {
+        margin-right: 5%;
+    }
+    .contact__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contact-form__bottom {
+        margin-top: 20px;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-center {
+        flex-basis: 45%;
+    }
+    .footer-right {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .wrap {
+        max-width: 95%;
+    }
+    .header-upper__address {
+        display: none;
+    }
+    .logo {
+        width: 160px;
+    }
+    .page-cover {
+        height: 300px;
+        background-position: -70px 0;
+    }
+    .page-cover__flex {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+    }
+    .page-cover__info {
+        width: 300px;
+        margin-top: 70px;
+        margin-right: 0;
+        text-align: right;
+    }
+    .page-cover__button img {
+        max-width: 250px;
+        margin-right: 0;
+    }
+
+    .message-block__descr {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .advantages__item {
+        width: 90%;
+    }
+    .makeup-products__desc {
+        font-size: 16px;
+    }
+    .portfolio__content {
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+    .portfolio__item {
+        flex-basis: 90%;
+        margin-bottom: 30px;
+    }
+    .portfolio__item:last-child {
+        margin-bottom: 0;
+    }
+    .slider-portfolio .slick-arrow.slick-prev {
+        left: 15px;
+    }
+    .slider-portfolio .slick-arrow.slick-next {
+        right: 15px;
+    }
+    .makeup-room__gallery {
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+    .makeup-room__item {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .makeup-room__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .feedback-slide {
+        max-width: 550px;
+    }
+
+    .feedback-slider-btn {
+        margin-top: 50px;
+
+    }
+
+    .contact-form__bottom {
+        display: none;
+    }
+    .contact-form__btn {
+        display: none;
+    }
+    .contact-form-popup__btn {
+        display: block;
+    }
+}
+@media (max-width: 700px) {
+    .contact-form-modal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .wrap {
+        max-width: 98%;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    .side-img {
+        flex-basis: 100%;
+        margin: 0 auto;
+        max-width: 500px;
+        max-height: 500px;
+        margin-top: 30px;
+    }
+    .header-upper__social>li {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .header-upper__contacts>li {
+        font-size: 16px;
+    }
+    .page-cover {
+        display: none;
+    }
+    .page-cover-mobile {
+        display: block;
+    }
+    .main-photo {
+        display: block;
+        background-image: url(/img/main-photo.jpg);
+        background-color: #000000;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
+
+    .main-header-mobile__title {
+        font-family: 'Open Sans', sans-serif;
+        color: #000;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .main-header-mobile__title span {
+        font-size: 28px;
+        color: #BA2A51;
+    }
+    .main-header-mobile__descr {
+        text-align: center;
+        margin-top: 20px;
+    }
+ 
+    .page-cover__button img {
+        margin-right: 10px;
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 330px;
+
+    }
+
+    .main-fields__list {
+        padding-left: 10px;
+    }
+
+    .advantages__item {
+        width: 100%;
+    }
+  
+    .makeup-products__desc {
+        font-size: 18px;
+        text-align: center;
+    }
+    .brands__item {
+        height: 20px;
+    }
+    .our-teachers__descr {
+        bottom: -45px;
+    }
+    .slider-portfolio .slick-arrow {
+        width: 30px;
+        height: 30px;
+        
+    }
+    .feedback {
+        background: url(/img/photos/lipstickssplash-turn-r.png) no-repeat right top;
+        background-size: 200px 265px;
+        background-color: #fff;
+        min-height: 265px;
+    }
+
+
+    .footer {
+        padding: 20px 0;
+
+    }
+    .footer-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .footer-left {
+        display: block;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer-center {
+        flex-basis: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .section {
+        padding: 50px 0;
+    }
+    .section__header {
+        margin-bottom: 40px;
+    }
+    .long-menu {
+        width: 70%;
+    }
+    .brands__item {
+        height: 30px;
+    }
+    .page-cover__button img {
+        max-width: 280px;
+    }
+    .our-teachers__descr {
+        width: 240px;
+        height: 110px;
+    }
+    .feedback {
+        background: url() no-repeat right bottom;
+        background-size: 200px 265px;
+        background-color: #fff;
+        min-height: 265px;
+    }
+    .feedback-slide {
+        margin-top: 0;
+    }
+    .contact {
+        background: url(/img/photos/makeupbg.jpg) -300px 0 no-repeat;
+        background-size: cover;
+    }
+    .contact-inner {
+        margin-left: 35%;
+    }
+
+
+
+
+}
+@media (max-width: 360px) {
+    .header-upper__social i {
+        font-size: 16px;
+    }
+    .header-upper__contacts i {
+        font-size: 12px;
+    }
+    .our-teachers__descr {
+        width: 200px;
+    }
+    .contact {
+        background: url(/img/photos/makeupbg.jpg) -400px 0 no-repeat;
+        background-size: cover;
+    }
+    .contact-inner {
+        margin-left: 35%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

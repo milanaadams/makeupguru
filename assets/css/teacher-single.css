@@ -1,0 +1,40 @@
+.teachers-single-title {
+    display: inline-block;
+    color: #BA2A51;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+.teachers-card {
+    display: flex;
+    justify-content: space-between;
+}
+.teachers-single-sidebar {
+    flex-basis: 30%;
+}
+.teachers-single-info {
+    flex-basis: 65%;
+}
+.teachers-single-position {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------- Media Query 770 -----------------------  */
+
+@media (max-width: 750px) {
+    .teachers-card {
+        flex-direction: column;
+    }
+    .teachers-single-sidebar {
+        flex-basis: 100%;
+    }
+    .teachers-single-info {
+        flex-basis: 100%;
+    }
+    .teachers-cover {
+        display: none;
+    }
+}
